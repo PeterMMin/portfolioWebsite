@@ -10,6 +10,16 @@ nav {
     background-color: #333;
     padding: 0px 0;
     text-align: center;
+    margin: 0; /* Ensure no default margins on nav */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block; /* Prevent extra spacing from inline elements */
+    padding: 5px 0; /* Add a small padding to make the nav visible */
 }
 
 h1 {
@@ -19,5 +29,12 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 250px;
+    margin: 0; /* Remove default margins to move the h1 up */
+    line-height: 1; /* Ensure the line height doesn't add extra space */
 }
 
+p {
+    color: #666;
+    text-align: left;
+    font-size: 18px;
+}

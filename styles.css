@@ -1,40 +1,100 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 25px;
+    border-bottom: solid;
+    font-size: 20px;
+}
+
+.nav-left {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+.nav-right {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+#bodypage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.header-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    border-bottom: solid;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: row; /* Place children side by side */
+    height: 75vh;
+    max-width: 90vw; /* Constrain to 90% width */
+    margin: 0 auto;
+    width: 100%;
+    position: relative; /* For the vertical bar */
+}
+
+.project-about {
+    width: 50%;
+    margin: 0;
+    padding-right: 20px; /* Add some spacing between the text and the bar */
+    border-right: none; /* Remove the previous border */
+}
+
+.project-image {
+    width: 50%;
+    margin: 0;
+    padding-left: 20px; /* Add some spacing */
+}
+
+/* Add a vertical bar in the middle using a pseudo-element */
+.project::after {
+    content: '';
+    position: absolute;
+    padding-top: 5vh;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 1px; /* Thickness of the bar */
+    background-color: black; /* Color of the bar */
+    transform: translateX(-50%); /* Center the bar */
+}
+
 body {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     font-size: 16px;
 }
 
-nav {
-    background-color: #333;
-    padding: 0px 0;
-    text-align: center;
-    margin: 0; /* Ensure no default margins on nav */
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 20px;
-    display: inline-block; /* Prevent extra spacing from inline elements */
-    padding: 5px 0; /* Add a small padding to make the nav visible */
-}
-
 h1 {
-    color: #333;
+    color: black;
     text-align: left;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 250px;
-    margin: 0; /* Remove default margins to move the h1 up */
-    line-height: 1; /* Ensure the line height doesn't add extra space */
+    font-size: 100px;
+    line-height: 1;
 }
 
 p {
     color: #666;
     text-align: left;
-    font-size: 18px;
+    font-size: 50px;
+    padding: 20px;
 }

@@ -1,8 +1,12 @@
+body {
+    background-color: #ececec;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: #ececec;
     padding: 10px 25px;
     border-bottom: solid;
     font-size: 20px;
@@ -34,62 +38,82 @@ nav {
     max-width: 90vw;
     margin: 0 auto;
     border-bottom: solid;
-    padding-bottom: 50px;
+    padding-top: 2vw; /* Reduced from 4vw to decrease the gap above the text */
+    padding-bottom: 2vw; /* Reduced from 4vw to decrease the gap below the text */
     width: 100%;
 }
 
 .project {
     display: flex;
     flex-direction: row; /* Place children side by side */
-    height: 75vh;
+    height: 43vw;
     max-width: 90vw; /* Constrain to 90% width */
     margin: 0 auto;
     width: 100%;
     position: relative; /* For the vertical bar */
+    padding-top: 2vw;
+    padding-bottom: 2vw; /* Add this to create the gap between content and bottom border */
+    border-bottom: solid;
 }
 
 .project-about {
     width: 50%;
     margin: 0;
-    padding-right: 20px; /* Add some spacing between the text and the bar */
-    border-right: none; /* Remove the previous border */
+    border-right: solid;
 }
 
 .project-image {
     width: 50%;
     margin: 0;
-    padding-left: 20px; /* Add some spacing */
 }
 
-/* Add a vertical bar in the middle using a pseudo-element */
-.project::after {
-    content: '';
-    position: absolute;
-    padding-top: 5vh;
-    left: 50%;
-    top: 0;
-    height: 100%;
-    width: 1px; /* Thickness of the bar */
-    background-color: black; /* Color of the bar */
-    transform: translateX(-50%); /* Center the bar */
+img {
+    width: 43vw;
+    padding-left: 2vw;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    font-size: 16px;
+.about-me {
+    align-self: flex-start; /* Aligns the About Me section to the left within the flex container */
+    max-width: 90vw; /* Matches the max-width of other sections */
+    width: 100%; /* Ensures it takes the full available width within max-width */
+    margin: 0 auto; /* Centers within its own constrained width */
+    padding-top: 2vw; /* Match the padding from .project */
+    padding-bottom: 2vw; /* Match the padding from .project */
+}
+
+.about-me-content {
+    display: flex; /* Use flexbox to layout children side by side */
+    flex-direction: row; /* Place image and text side by side */
+    align-items: center; /* Vertically center the image and text */
+}
+
+.about-me img {
+    width: 40vw; /* Keep the image size as specified */
+    padding-left: 0; /* Removes padding to align better */
+    margin-right: 2vw; /* Add some spacing between the image and text */
+}
+
+.about-me p {
+    width: 50%; /* Take up the remaining space */
+    margin: 0; /* Remove default margins */
+    font-size: 30px; /* Adjust font size to better fit the layout */
+    color: #666; /* Match the color from your global p styling */
+    text-align: left; /* Keep text aligned to the left */
 }
 
 h1 {
     color: black;
     text-align: left;
-    font-family: "DM Serif Text", serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 6.5vw;
     font-style: normal;
-    font-size: 100px;
-    line-height: 1;
+    line-height: 1.5; /* Increase spacing between the two lines (ENGINEERING PORTFOLIO: and PETER MIN) */
+}
+
+h3 {
+    text-align: left;
 }
 
 p {
@@ -98,3 +122,28 @@ p {
     font-size: 50px;
     padding: 20px;
 }
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  

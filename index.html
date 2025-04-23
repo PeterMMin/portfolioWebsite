@@ -10,6 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,25 +31,52 @@
         </nav>
     </div>
    
-    <div id= "bodypage", flex-direction:row  > 
+    <div id="bodypage" flex-direction:column> 
         <div class="header-container">
-            <h1>ENGINEERING PORTFOLIO:<br> PETER MIN</h1>
+            <h1><span>ENGINEERING PORTFOLIO:</span><br><span>PETER MIN</span></h1>
         </div>
 
-        <div class = "project", flex-direction:column>
+        <div class="project" flex-direction:row>
             <div class="project-about">
-                <h2> ARC Rocket </h2>
+                <h3>Project #1</h3>
             </div>
             
-            <div class = "project-image">
-                
+            <div class="project-image">
+                <img src="photos/portfolioCar.jpg" alt="RocketImage">           
             </div>
-            
         </div>
 
-    </div>
-    
-    
-</body>
+        <div class="project" flex-direction:row>
+            <div class="project-about">
+                <h3>Project #2</h3>
+                <h2>ARC Rocket</h2>
+                <p>I designed and 3D-printed <br> a rocket to compete <br>in the American Rocketry<br> Challenge</p>
+                <button type="button">See More</button>
+            </div>
+                
+            <div class="project-image">
+                <img src="photos/rocketDiagram.png" alt="RocketImage">           
+            </div>
+        </div>
 
+        <div class="project" flex-direction:row>
+            <div class="project-about">
+                <h3>Project #3</h3>
+            </div>
+            
+            <div class="project-image">
+                <img src="photos/rocketDiagram.png" alt="RocketImage">           
+            </div>
+        </div>
+
+        <div class="about-me">
+            <h3>About Me</h3>
+            <div class="about-me-content">
+                <img src="photos/portfolioAboutPhoto.jpg" alt="MeImage"> 
+                <p>UC Berkeley Aerospace Engineering Class of 2029 <br> Grew up in LA Area
+                <br> Contact Me: petermaymin@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

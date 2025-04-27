@@ -1,0 +1,236 @@
+body {
+    background-color: #1b1b1b;
+}
+
+#navBar {
+    border-bottom: solid;
+    border-color: #e6e6e6;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 10px 5vw;
+    width: 100%;
+}
+
+.nav-left a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+ 
+}
+
+.nav-right a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3vw;
+    padding-left: 0.5vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+#bodypage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#titleBox{
+    width:100vw;
+    border-bottom: solid;
+    border-color:#e6e6e6;
+}
+
+.header-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    border-bottom: solid;
+    padding-top: 2vw; /* Reduced from 4vw to decrease the gap above the text */
+    padding-bottom: 2vw; /* Reduced from 4vw to decrease the gap below the text */
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: row; /* Place children side by side */
+    height: 50vw;
+    width: 100vw; /* Constrain to 90% width */
+    margin: 0 auto;
+    width: 100%;
+    position: relative; /* For the vertical bar */
+    border-bottom: solid;
+    border-color: #e6e6e6;
+}
+
+.projectAbout a {
+    display: inline-block;
+    text-decoration: none;
+    color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    border-radius: 25px; /* Rounded button */
+    padding: 1vw 2vw;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    text-align: center;
+    width: fit-content;
+}
+
+img{
+    width:40vw;
+}
+
+.projectAbout{
+    padding-top: 5vw;
+    padding-left:5vw;
+    padding-bottom: 5vw;  
+    width:45vw;
+}
+
+.projectImage{
+    padding-top: 5vw;
+    padding-right:5vw;
+    padding-left:5vw;
+    padding-bottom: 5vw;
+    height:40vw;
+    align-items:right;
+    
+}
+
+
+.about-me {
+    align-self: flex-start; /* Aligns the About Me section to the left within the flex container */
+    display: flex;
+    flex-direction: row; /* Place children side by side */
+    max-width: 90vw; /* Matches the max-width of other sections */
+    width: 100%; /* Ensures it takes the full available width within max-width */
+    margin: 0 auto; /* Centers within its own constrained width */
+    padding-top: 5vw; /* Match the padding from .project */
+    padding-bottom: 5vw; /* Match the padding from .project */
+}
+
+
+.about-me-content {
+    display: flex; /* Use flexbox to layout children side by side */
+    flex-direction: column; /* Place image and text side by side */
+    align-items: center; /* Vertically center the image and text */
+    padding-left: 7.5vw;
+   
+}
+
+h1 {
+    color: #e6e6e6;
+    text-align: left;
+    font-size:10vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    line-height: 0.9; /* Increase spacing between the two lines (ENGINEERING PORTFOLIO: and PETER MIN) */
+}
+
+h2 {
+    color: #e6e6e6;
+    font-size: 4vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    padding-top: 1vw;
+}
+
+h3 {
+    color: #e6e6e6;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.projectAbout p {
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+    max-width: 35vw;
+}
+
+p {
+    color: #e6e6e6;
+    text-align: left;
+    font-size: 1.5vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.contact-me {
+    width: 100vw;
+    padding-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+}
+
+.contact-me h2 {
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row; /* Place email and LinkedIn side by side */
+    justify-content: center; /* Center the items */
+    gap: 5vw; /* Space between email and LinkedIn */
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+}
+
+.contact-item .label {
+    color: #e6e6e6; /* White color for the labels */
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2vw; /* Smaller font size for labels */
+    font-weight: 400;
+    margin-bottom: 0.5vw; /* Space between label and value */
+}
+
+.contact-item p:not(.label) {
+    color: #999; /* Lighter gray for the contact details */
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2vw; /* Smaller font size for the details */
+    font-weight: 300;
+    padding: 0; /* Remove excessive padding */
+}
+
+.resumePDF{
+    padding-left: 5vw;
+    padding-right:5vw;
+    padding-top:5vw;
+    width:10000vw;
+    height:100vh;
+
+}
